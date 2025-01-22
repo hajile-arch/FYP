@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+# Campus Eat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Campus Eat is a **web-based food delivery platform** designed for university students, allowing them to **order meals from campus vendors** and have them **delivered anywhere on campus**. The platform streamlines the food ordering process, ensuring convenience and efficiency.
 
-Currently, two official plugins are available:
+## Features
+- **Browse Menus** – View available food options from different campus vendors.
+- **Order Food** – Select meals and place orders directly through the platform.
+- **Delivery Anywhere on Campus** – Choose a drop-off location within the university.
+- **Real-time Order Tracking** *(Planned Feature)* – Track the status of orders in real time.
+- **User Authentication** – Secure login and signup powered by Supabase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Technologies Used
+- **Frontend:** TypeScript, React, Tailwind CSS
+- **Backend & Database:** Supabase (Authentication & Database Management)
+- **Hosting & Deployment:** *(Specify if applicable)*
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation & Setup
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+- [Git](https://git-scm.com/)
 
-- Configure the top-level `parserOptions` property like this:
+### Steps to Run Locally
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/campus-eat.git
+   cd campus-eat
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Set up environment variables:**
+   - Create a `.env` file in the root directory and add your Supabase credentials.
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+5. **Open in Browser:**
+   The app will be running at `http://localhost:3000/`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Deployment
+*(Include deployment steps if hosted, e.g., Vercel, Netlify, Firebase Hosting, etc.)*
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contributing
+Contributions are welcome! Follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Contact
+For any inquiries or contributions, contact:
+- **Name:** *Elijah Wong*
+- **Email:** *elijahwongwork@gmail.com*
+- **GitHub:** (https://github.com/hajile-arch/)
+
+---
+Thank you for using **Campus Eat**! 🚀
+
